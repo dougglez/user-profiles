@@ -14,7 +14,7 @@ var corsOptions = {
   origin: 'http://localhost:config.port'
 };
 
-app.use(express.static(_dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.json());
 
